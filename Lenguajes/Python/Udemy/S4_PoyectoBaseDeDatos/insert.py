@@ -6,10 +6,10 @@ db = client.EmployeeData
 # Function to insert data into mongo db
 def insert():
     try:
-        employeeid = input('Enter Employee id :')
-        employeename = input('Enter Name :')
-        employeeage = input('Enter age :')
-        employeecountry = input('Enter Country')
+        employeeid = input('Enter Employee id:')
+        employeename = input('Enter Name:')
+        employeeage = input('Enter age:')
+        employeecountry = input('Enter Country:')
         db.Employees.insert_one(
         {
             "id": employeeid,
